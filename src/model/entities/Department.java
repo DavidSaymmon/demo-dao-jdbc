@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class Department implements Serializable {
 	private static final long serialVersionUID = 1L;
-	Integer id;
-	String nome;
+	private Integer id;
+	private String nome;
 	public Department(Integer id, String nome) {
 		this.id = id;
 		this.nome = nome;
