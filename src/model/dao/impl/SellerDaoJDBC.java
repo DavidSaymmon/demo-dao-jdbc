@@ -77,6 +77,11 @@ public class SellerDaoJDBC implements SellerDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public Seller findByDepartment(Department department) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 }
