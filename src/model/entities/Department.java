@@ -6,10 +6,10 @@ import java.util.Objects;
 public class Department implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Integer id;
-	private String nome;
-	public Department(Integer id, String nome) {
+	private String name;
+	public Department(Integer id, String name) {
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 	}
 	public Department(){
 	
@@ -20,21 +20,21 @@ public class Department implements Serializable {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, nome);
+		return Objects.hash(id, name);
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", nome=" + nome + "]";
+		return "Department [id=" + id + ", name=" + name + "]";
 	}
 	public boolean equals(Department department) {
 		if(department.getId()!=id) {
